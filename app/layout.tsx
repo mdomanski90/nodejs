@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,18 +10,18 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-    <body><ThemeProvider
+      <html lang="en">
+      <body><ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem={true}>
         {children}
-    </ThemeProvider></body>
-    </html>  
+      </ThemeProvider></body>
+      </html>
   );
 }

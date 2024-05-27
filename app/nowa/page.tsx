@@ -1,8 +1,9 @@
 "use client"
+import * as React from "react"
 import {Sun, Moon} from "lucide-react"
-
 import { cn } from "@/lib/utils"
 import {buttonVariants} from "@/components/ui/button"
+import { useTheme } from "next-themes"
 import {
     Card,
     CardContent,
@@ -13,8 +14,8 @@ import {
 } from "@/components/ui/card"
 import { Switch } from "@/components/ui/switch"
 import Link from "next/link";
-import {ReactNode} from "react";
-import {useTheme} from "next-themes";
+
+
 
 const notifications = [
     {
@@ -26,24 +27,25 @@ const notifications = [
 
 type CardProps = React.ComponentProps<typeof Card>
 
-export function ModeToggle() {
-    const { theme, setTheme } = useTheme()
+function ModeToggle() {
+    const { setTheme } = useTheme();
 
-    const handleThemeToggle = () => {
-        setTheme(theme === "light" ? "dark" : "light");
+    const handleThemeToggle = (checked: boolean) => {
+        setTheme(checked ? "dark" : "light");
     };
 
     return (
         <div className="flex items-center space-x-2">
-            <Sun className={`h-6 w-6 transition-colors text-yellow-500 ${theme === "light" ? "opacity-100" : "opacity-0"}`} />
-            <Switch checked={theme === "dark"} onCheckedChange={handleThemeToggle} />
-            <Moon className={`h-6 w-6 transition-colors text-gray-500 ${theme === "dark" ? "opacity-100" : "opacity-0"}`} />
+            <Sun className="h-6 w-6 transition-colors text-yellow-500" />
+            <Switch onCheckedChange={handleThemeToggle} />
+            <Moon className="h-6 w-6 transition-colors text-gray-500" />
         </div>
     );
 }
 
 
-export function CardDemo({ className, ...props }: CardProps) {
+
+function CardDemo({ className, ...props }: CardProps) {
     return (
         <Card className={cn("w-[380px]", className)} {...props}>
             <CardHeader>
