@@ -1,8 +1,8 @@
 "use client"
-import {BellRing, Sun, Moon} from "lucide-react"
+import {Sun, Moon} from "lucide-react"
 
 import { cn } from "@/lib/utils"
-import {Button, buttonVariants} from "@/components/ui/button"
+import {buttonVariants} from "@/components/ui/button"
 import {
     Card,
     CardContent,
@@ -91,10 +91,6 @@ export function CardDemo({ className, ...props }: CardProps) {
             </CardFooter>
         </Card>
     )
-}
-
-function FormControl(props: { children: ReactNode }) {
-    return null;
 }
 
 export default function Nowa() {

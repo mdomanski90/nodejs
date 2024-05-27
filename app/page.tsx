@@ -1,18 +1,7 @@
 "use client"
 import * as React from "react"
-import { BellRing, Check } from "lucide-react"
-import { Sun, Moon, ExternalLink } from "lucide-react";
-import { cn } from "@/lib/utils"
+import { Sun, Moon } from "lucide-react";
 import {Button, buttonVariants} from "@/components/ui/button"
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
-import { Switch } from "@/components/ui/switch"
 import { useTheme } from "next-themes"
 import {
     DropdownMenu,
@@ -21,7 +10,6 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import Link from "next/link";
-import {getAppEntry} from "next/dist/build/entries";
 export function ModeToggle() {
     const { setTheme } = useTheme()
 
