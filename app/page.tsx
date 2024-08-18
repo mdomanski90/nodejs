@@ -48,7 +48,7 @@ export default function Home() {
             <h1 className=" bg-clip-text text-7xl text-transparent bg-gradient-to-r from-blue-500 to-cyan-500 font-mono font-bold">
                 Drodzy Goście!
             </h1>
-            <h1 className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-xl font-semibold ">
+            <h1 className="w-2/3 relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-xl font-semibold ">
                 spotkania rodzin Ułasiuków, Filipiuków, Iwanowskich - Iwaniuków z dn. 18.08.2024
             </h1>
             <h1 className=" w-2/3 bg-clip-text text-base text-blue-600  font-mono font-bold">Niestety nie udało mi się
