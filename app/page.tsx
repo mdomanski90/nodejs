@@ -57,8 +57,9 @@ export default function Home() {
                 adresu, a także w razie potrzeby do wywierania dodatkowej presji :) <br/> <br/>Wszelkie wiadomości można
                 słać na adres:</h1>
             <h1 className=" w-2/3 bg-clip-text text-2xl  font-mono font-bold">foto@odniepamieci.pl </h1>
-            <h1 className=" w-2/3 bg-clip-text text-xl font-mono font-bold">Pozdrawiam wszystkich i dziękuję za spotkanie, <br />Mateusz Domański</h1>
-            
+            <h1 className=" w-2/3 bg-clip-text text-xl font-mono font-bold">Pozdrawiam wszystkich i dziękuję za
+                spotkanie, <br/>Mateusz Domański</h1>
+            <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-base font-semibold ">18/08/2024</code>
         </main>
     );
 }
