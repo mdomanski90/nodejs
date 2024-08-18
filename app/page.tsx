@@ -41,17 +41,25 @@ function ModeToggle() {
 export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-center gap-5 ">
-          <div className="flex justify-center gap-x-5"> 
-            <Link className={buttonVariants({variant: "outline"})} href={"/nowa"}>Druga strona</Link>
-            <ModeToggle/>
-          </div>
+            <div className="flex justify-center gap-x-5">
+               
+                <ModeToggle/>
+            </div>
             <h1 className=" bg-clip-text text-7xl text-transparent bg-gradient-to-r from-blue-500 to-cyan-500 font-mono font-bold">
-                Mateusz Domański
+                Drodzy Goście!
             </h1>
             <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-xl font-semibold ">
-                @nr_albumu/121980
+                spotkania rodzin Ułasiuków, Filipiuków, Iwanowskich - Iwaniuków z dn. 18.08.2024
             </code>
-            
+            <h1 className=" w-2/3 bg-clip-text text-base text-blue-600  font-mono font-bold">Niestety nie udało mi się
+                jeszcze zaktualizować drzewa genealogicnego.<br/> W tym miejscu niedługo pojawi się jednak link do
+                niego, a także udostępnię w jakiś sposób zdjęcia z naszego spotkania. <br/> Zachęcam do sprawdzania tego
+                adresu, a także w razie potrzeby do wywierania dodatkowej presji :) <br/> <br/>Wszelkie wiadomości można
+                słać na adres:</h1>
+            <h1 className=" w-2/3 bg-clip-text text-2xl  font-mono font-bold">foto@odniepamieci.pl </h1>
+            <h1 className=" w-2/3 bg-clip-text text-xl  font-mono font-bold">Mateusz Domański</h1>
+
+
         </main>
     );
 }
