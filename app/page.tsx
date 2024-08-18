@@ -42,7 +42,7 @@ export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-center gap-5 ">
             <div className="flex justify-center gap-x-5">
-               
+
                 <ModeToggle/>
             </div>
             <h1 className=" bg-clip-text text-7xl text-transparent bg-gradient-to-r from-blue-500 to-cyan-500 font-mono font-bold">
@@ -57,9 +57,8 @@ export default function Home() {
                 adresu, a także w razie potrzeby do wywierania dodatkowej presji :) <br/> <br/>Wszelkie wiadomości można
                 słać na adres:</h1>
             <h1 className=" w-2/3 bg-clip-text text-2xl  font-mono font-bold">foto@odniepamieci.pl </h1>
-            <h1 className=" w-2/3 bg-clip-text text-xl  font-mono font-bold">Mateusz Domański</h1>
-
-
+            <h1 className=" w-2/3 bg-clip-text text-xl font-mono font-bold">Pozdrawiam wszystkich i dziękuję za spotkanie, <br />Mateusz Domański</h1>
+            
         </main>
     );
 }
